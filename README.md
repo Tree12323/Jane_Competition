@@ -167,7 +167,7 @@ resp_cols = ['resp_1', 'resp_2', 'resp_3', 'resp', 'resp_4']
 
 - StandardScaler和PCA（可选），用130个特征做的PCA。仅仅16维的空间就可以解释80%的信息了。所以130个特征的还是非常冗余的。
 
-<img src="../../Jane/1.Jane_EDA.assets/image-20210224165104245.png" alt="image-20210224165104245" style="zoom: 33%;" />
+<img src="README.assets/image-20210224165104245.png" alt="image-20210224165104245" style="zoom: 33%;" />
 
 - 构建`cross_41_42_43`和`cross_1_2`两个特征（可选）,利用LightGBM训练得到的特征重要性如下。
 
@@ -176,7 +176,7 @@ train['cross_41_42_43'] = train['feature_41'] + train['feature_42'] + train['fea
 train['cross_1_2'] = train['feature_1'] / (train['feature_2'] + 1e-5)
 ```
 
-<img src="../../Jane/1.Jane_EDA.assets/image-20210224170600846.png" alt="image-20210224170600846" style="zoom:50%;" />
+<img src="README.assets/image-20210224170600846.png" alt="image-20210224170600846" style="zoom:50%;" />
 
 ## Reference
 
